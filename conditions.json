@@ -1,0 +1,61 @@
+{
+    "conditions": [
+        {
+            "condition":[
+                {
+                    "name":"element1",
+                    "type":"radio",
+                    "value": "apple"
+                },
+                {
+                    "name":"element2",
+                    "type":"select",
+                    "value":"1"
+                }
+            ],
+            "result":[
+                {
+                    "name":"element3",
+                    "type":"text",
+                    "show": "no"
+                }
+            ]
+        },
+        {
+            "condition":[
+                {
+                    "name":"element1",
+                    "type":"radio",
+                    "value": "orange"
+                }
+            ],
+            "result":[
+                {
+                    "name":"element4",
+                    "type":"text",
+                    "show": "yes"
+                }
+            ]
+        },
+        {
+            "condition":[
+                {
+                    "name":"element5",
+                    "type":"checkbox"
+                }
+            ],
+            "result":[
+                {
+                    "name":"element6",
+                    "type":"text",
+                    "show": "no"
+                },
+                {
+                    "name":"element7",
+                    "type":"text",
+                    "show": "yes"
+                }                
+            ]
+        }        
+    ]
+}

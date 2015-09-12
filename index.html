@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validator</title>
+    <script src="js/jquerylib.js"></script>
+    <script src="js/parseConditions.js"></script>
+    <script src="js/getUrlParameters.js"></script>
+</head>
+<body>
+<input type="radio" id="apple" name="element1" value="apple" />Apple
+<input type="radio" id="orange" name="element1" value="orange" />Orange
+<br>
+<select  name="element2">
+    <option value="1">$1</option>
+    <option value="2">$2</option>
+    <option value="3">$3</option>
+</select>
+<br>
+<input type="text" name="element3" value="3" />
+<input type="text" name="element4" style="display:none" value="4" />
+<br>
+<input type="checkbox" name="element5" />Others <input type="text" name="element6" value="6" /><input type="text" name="element7" value="7" style="display:none" />
+
+<script type="text/javascript">
+    readConditions("conditions.json");
+</script>
+</body>
+</html>

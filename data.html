@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validator</title>
+    <script src="js/jquerylib.js"></script>
+    <script src="js/parseConditionsData.js"></script>
+    <script src="js/getUrlParameters.js"></script>
+</head>
+<body>
+<input type="radio" id="apple" name="element1" value="apple" data-condition-value="apple" data-result-hide="element3" data-result-type="text" />Apple
+<input type="radio" id="orange" name="element1" value="orange" data-condition-value="orange" data-result-show="element4" data-result-type="text" />Orange
+<br>
+<select  name="element2" data-condition-value="1">
+    <option value="1">$1</option>
+    <option value="2">$2</option>
+    <option value="3">$3</option>
+</select>
+<br>
+<input type="text" name="element3" value="3" />
+<input type="text" name="element4" style="display:none" value="4" />
+<br>
+<input type="checkbox" name="element5" data-condition-value="1" data-result-show="element7" data-result-type="text"/>Others <input type="text" name="element6" value="6" /><input type="text" name="element7" value="7" style="display:none" />
+
+<script type="text/javascript">
+    readConditions([$('input#apple'),$('select[name=element2]')]);
+    readConditions([$('input#orange')]);
+    readConditions([$('input[name=element5]')]);
+    
+</script>
+</body>
+</html>
